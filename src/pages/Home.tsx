@@ -1,4 +1,3 @@
-// Home.js
 import { useState } from "react";
 import CurrentWeather from "../components/currentWeather/CurrentWeather";
 import SearchBar from "../components/search/Search";
@@ -19,14 +18,14 @@ const Home = () => {
   return (
     <div className="container-app">
       <h1>Weather App</h1>
-      <SearchBar onSearch={handleSearch} />    
-        <CitiesWanted onSearch={handleSearch} />
+      <SearchBar onSearch={handleSearch} />
+      <CitiesWanted onSearch={handleSearch} />
       {weatherInfo &&
         <>
           <CurrentWeather weatherInfo={weatherInfo!} />
           <ForecastInfo weatherInfo={weatherInfo!} />
         </>
-      }    
+      }
     </div>
   );
 };

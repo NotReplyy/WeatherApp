@@ -1,3 +1,5 @@
+  @import '../../scss/abstracs/mixins.scss';
+
 .container-forecast {
   background-color: var(--panelBgColor);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -6,8 +8,13 @@
   display: flex;
   flex-direction: column;  
   margin-top: 1rem;
-  width: 50%;
+  width: 90%;
   overflow-x: hidden;
+  margin-bottom: 2rem;
+
+  @include breakpoint('md') {
+    width: 50%;
+  }
 
   .section-title {
     font-weight: 500;

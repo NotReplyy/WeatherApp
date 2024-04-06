@@ -1,3 +1,5 @@
+@import '../../scss/abstracs/mixins.scss';
+
 .container-searchbar {
   position: relative;
   height: 3.25rem;
@@ -8,7 +10,13 @@
   display: flex;
   align-items: center;
   z-index: 1;
-  width: 50%;
+  width: 90%;
+  margin-top: 1rem;
+
+  @include breakpoint('md') {
+    width: 50%;
+    margin-top: 0;
+  }
 }
 
 .search-input {
@@ -19,7 +27,7 @@
   background-color: var(--panelBgColor);
   font-size: 1.125rem;
   color: var(--textApp);
-  width: 100%;
+  width: 2rem;
 
   &:focus {
     outline: none;
@@ -28,23 +36,27 @@
   &:placeholder {
     color: var(--searchInputPlaceholderColor);
   }
+
+  @include breakpoint('md') {
+    width: 100%;
+  }
+
 }
 
 .button-location {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 1rem;
   background-color: var(--colorButton);
   color: white;
-  font-size: 20px;
-  border: none;
+  font-size: 1.125rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
-  svg {
-    margin-right: 10px;
+  span {
+    display: none;
   }
 
   &:hover {
@@ -54,6 +66,20 @@
   &:focus {
     outline: none;
   }
+
+  @include breakpoint('md') {
+    padding: 10px 20px;
+    font-size: 20px;
+
+    span {
+      display: block;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
 }
 
 .box-search-suggestions {
@@ -66,7 +92,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
   min-width: 200px;
-  overflow-y: auto; 
+  overflow-y: auto;
 
   .suggestion-item {
     padding: 10px;

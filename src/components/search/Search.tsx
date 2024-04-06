@@ -67,7 +67,9 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         className='button-location'
       >
         <IoLocationOutline />
-        My location
+        <span>
+          My Location
+        </span>
       </button>
       {open && (
         <div className='box-search-suggestions'>
