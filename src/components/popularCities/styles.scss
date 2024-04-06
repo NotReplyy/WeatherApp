@@ -1,0 +1,30 @@
+.container-cities {
+  display: flex;
+}
+
+.container-cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 0.5rem;
+}
+
+.button-city {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: var(--buttonColor);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #14afaa;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
