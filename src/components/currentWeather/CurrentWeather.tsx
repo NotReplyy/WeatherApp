@@ -27,21 +27,21 @@ const CurrentWeather = ({ weatherInfo }: { weatherInfo: WeatherData }) => {
             </div>
             <div className="info-row">
               <div>
-              <IoWater />
+                <IoWater />
                 <span>Humidity</span>
               </div>
               <span>{currentWeather?.humidity}%</span>
             </div>
             <div className="info-row">
               <div>
-              <IoArrowDownOutline />
+                <IoArrowDownOutline />
                 <span>Pressure</span>
               </div>
               <span>{currentWeather?.pressure} hPa</span>
             </div>
             <div className="info-row">
               <div>
-              <FaWind />
+                <FaWind />
                 <span>Wind</span>
               </div>
               <span>{changeUnitWind(currentWeather?.speed)} km/h</span>

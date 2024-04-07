@@ -7,6 +7,6 @@ export const getNextDays = () => {
   return next3Days;
 };
 
-  export  const changeUnitWind = (speed: number) => {
-    return Math.round(speed * 3.6);
-  }
+export const changeUnitWind = (speed: number) => {
+  return Math.round(speed * 3.6);
+}

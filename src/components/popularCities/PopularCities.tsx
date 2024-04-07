@@ -18,7 +18,7 @@ const PopularCities = ({ onSearch }: PopularCitiesProps) => {
   ];
 
   return (
-    <div>      
+    <div>
       <div className='container-cities'>
         {cities.map((city, index) => (
           <button

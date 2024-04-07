@@ -7,7 +7,7 @@ export const useWeatherData = (city: string | { lat: number; lon: number }) => {
   const [weatherInfo, setWeatherInfo] = useState<WeatherData | null>(null);
 
   useEffect(() => {
-    
+
     const fetchData = async () => {
       if (!city) return;
       try {
