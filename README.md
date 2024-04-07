@@ -15,12 +15,20 @@ Este proyecto es una aplicación de clima desarrollada en React con TypeScript y
 
 ## Tecnologías Utilizadas
 
-- **React:** Utilicé React como la biblioteca principal para construir la interfaz de usuario de nuestra aplicación meteorológica, aprovechando su eficiencia y rendimiento.
-- **TypeScript:** Implementé TypeScript para agregar tipado estático a nuestro código, mejorando la robustez y la mantenibilidad del proyecto.
-- **SCSS:** Utilicé SCSS para la gestión de estilos, permitiendo la creación de estilos reutilizables y mantenibles para nuestros componentes de React. Además, adopté un enfoque "mobile first" en el diseño de estilos para garantizar una experiencia de usuario óptima en dispositivos móviles.
-- **Vite:** Vite fue utilizado como el compilador para el proyecto, proporcionando un entorno de desarrollo rápido y eficiente que permite una experiencia de desarrollo fluida y productiva.
-- **Patrón de Hooks Personalizados:** Implementé un patrón de hooks personalizados para mejorar la reutilización de la lógica y la separación de preocupaciones en los componentes de React.
+### React
+Utilicé React como la biblioteca principal para construir la interfaz de usuario de nuestra aplicación meteorológica, aprovechando su eficiencia y rendimiento.
 
+### TypeScript
+Implementé TypeScript para agregar tipado estático a nuestro código, mejorando la robustez y la mantenibilidad del proyecto.
+
+### SCSS
+Utilicé SCSS para la gestión de estilos, permitiendo la creación de estilos reutilizables y mantenibles para nuestros componentes de React. Además, adopté un enfoque "mobile first" en el diseño de estilos para garantizar una experiencia de usuario óptima en dispositivos móviles.
+
+### Vite
+Vite fue utilizado como el compilador para el proyecto, proporcionando un entorno de desarrollo rápido y eficiente que permite una experiencia de desarrollo fluida y productiva.
+
+### Patrón de Hooks Personalizados
+Implementé un patrón de hooks personalizados para mejorar la reutilización de la lógica y la separación de preocupaciones en los componentes de React. Este patrón me permitió encapsular la lógica relacionada con la obtención y manipulación de datos, así como la gestión del estado de la aplicación, en hooks personalizados. Esto facilitó la modularización del código y la reutilización de la lógica en diferentes partes de la aplicación, mejorando así la mantenibilidad y escalabilidad del proyecto.
 
 
 ## Cómo correr el proyecto
