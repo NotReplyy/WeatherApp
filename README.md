@@ -36,6 +36,7 @@ Este proyecto es una aplicación de clima desarrollada en React con TypeScript y
 ```env
 VITE_APP_API_URL=https://api.openweathermap.org/data/2.5/forecast/daily
 VITE_APP_API_FIND=https://api.openweathermap.org/data/2.5/find
+VITE_WEATHER_API_KEY=<tu_api_key>
 
 ```
 Estas variables de entorno se utilizan para proteger la información sensible y para mantener la configuración de la aplicación flexible.
