@@ -19,8 +19,8 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
   useEffect(() => {
     const storedSearchTerm = localStorage.getItem('weatherInfo')
     if (storedSearchTerm) {
-      const { city } = JSON.parse(storedSearchTerm)
-      onSearch(city.name)
+      const { name } = JSON.parse(storedSearchTerm)
+      onSearch(name)
     }
   }, [onSearch])
 

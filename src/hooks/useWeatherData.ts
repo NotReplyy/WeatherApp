@@ -12,8 +12,8 @@ export const useWeatherData = (city: string | { lat: number; lon: number }) => {
       if (!city) return;
       try {
         const data = await getWeatherCity(city);
-        setWeatherInfo(data);
-        localStorage.setItem('weatherInfo', JSON.stringify(data));
+        setWeatherInfo(data);        
+        localStorage.setItem('weatherInfo', JSON.stringify(data?.city));
       } catch (error) {
         console.error('Error fetching weather information:', error);
       }
