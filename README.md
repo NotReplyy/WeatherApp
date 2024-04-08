@@ -16,13 +16,13 @@ Este proyecto es una aplicación de clima desarrollada en React con TypeScript y
 ## Tecnologías Utilizadas
 
 ### React
-Utilicé React como la biblioteca principal para construir la interfaz de usuario de nuestra aplicación meteorológica, aprovechando su eficiencia y rendimiento.
+Utilicé React como la biblioteca principal para construir la interfaz de usuario de la aplicación meteorológica, aprovechando su eficiencia y rendimiento.
 
 ### TypeScript
-Implementé TypeScript para agregar tipado estático a nuestro código, mejorando la robustez y la mantenibilidad del proyecto.
+Implementé TypeScript para agregar tipado estático al código, mejorando la robustez y la mantenibilidad del proyecto.
 
 ### SCSS
-Utilicé SCSS para la gestión de estilos, permitiendo la creación de estilos reutilizables y mantenibles para nuestros componentes de React. Además, adopté un enfoque "mobile first" en el diseño de estilos para garantizar una experiencia de usuario óptima en dispositivos móviles.
+Utilicé SCSS para la gestión de estilos, permitiendo la creación de estilos reutilizables y mantenibles para los componentes de React. Además, adopté un enfoque "mobile first" en el diseño de estilos para garantizar una experiencia de usuario óptima en dispositivos móviles.
 
 ### Vite
 Vite fue utilizado como el compilador para el proyecto, proporcionando un entorno de desarrollo rápido y eficiente que permite una experiencia de desarrollo fluida y productiva.
@@ -30,6 +30,11 @@ Vite fue utilizado como el compilador para el proyecto, proporcionando un entorn
 ### Patrón de Hooks Personalizados
 Implementé un patrón de hooks personalizados para mejorar la reutilización de la lógica y la separación de preocupaciones en los componentes de React. Este patrón me permitió encapsular la lógica relacionada con la obtención y manipulación de datos, así como la gestión del estado de la aplicación, en hooks personalizados. Esto facilitó la modularización del código y la reutilización de la lógica en diferentes partes de la aplicación, mejorando así la mantenibilidad y escalabilidad del proyecto.
 
+## Uso de Axios y Manejo del LocalStorage
+
+En este proyecto, utilizamos Axios para realizar solicitudes a la API de OpenWeatherMap y gestionar las respuestas de manera eficiente. Para mejorar la gestión de las solicitudes HTTP, se implementó Axios utilizando `axios.create`, lo que nos permitió configurar una instancia personalizada con la URL base y otras opciones comunes. Esto facilita el mantenimiento y la escalabilidad del código al proporcionar una configuración centralizada para todas las solicitudes API.
+
+Además, para garantizar una experiencia de usuario más fluida, implementamos el uso del localStorage del navegador para almacenar y recuperar los datos del clima. Esto permite que los datos se mantengan persistidos incluso después de que el usuario actualice la página, evitando así la necesidad de realizar solicitudes repetidas a la API.
 
 ## Cómo correr el proyecto
 
