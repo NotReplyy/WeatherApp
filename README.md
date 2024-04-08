@@ -30,7 +30,7 @@ Vite fue utilizado como el compilador para el proyecto, proporcionando un entorn
 ### Patrón de Hooks Personalizados
 Implementé un patrón de hooks personalizados para mejorar la reutilización de la lógica y la separación de preocupaciones en los componentes de React. Este patrón me permitió encapsular la lógica relacionada con la obtención y manipulación de datos, así como la gestión del estado de la aplicación, en hooks personalizados. Esto facilitó la modularización del código y la reutilización de la lógica en diferentes partes de la aplicación, mejorando así la mantenibilidad y escalabilidad del proyecto.
 
-## Uso de Axios y Manejo del LocalStorage
+### Uso de Axios y Manejo del LocalStorage
 
 En este proyecto, utilicé Axios para realizar solicitudes a la API de OpenWeatherMap y gestionar las respuestas de manera eficiente. Para mejorar la gestión de las solicitudes HTTP, se implementó Axios utilizando `axios.create`, lo que permitió configurar una instancia personalizada con la URL base y otras opciones comunes. Esto facilita el mantenimiento y la escalabilidad del código al proporcionar una configuración centralizada para todas las solicitudes API.
 
