@@ -32,9 +32,9 @@ Implementé un patrón de hooks personalizados para mejorar la reutilización de
 
 ## Uso de Axios y Manejo del LocalStorage
 
-En este proyecto, utilizamos Axios para realizar solicitudes a la API de OpenWeatherMap y gestionar las respuestas de manera eficiente. Para mejorar la gestión de las solicitudes HTTP, se implementó Axios utilizando `axios.create`, lo que nos permitió configurar una instancia personalizada con la URL base y otras opciones comunes. Esto facilita el mantenimiento y la escalabilidad del código al proporcionar una configuración centralizada para todas las solicitudes API.
+En este proyecto, utilicé Axios para realizar solicitudes a la API de OpenWeatherMap y gestionar las respuestas de manera eficiente. Para mejorar la gestión de las solicitudes HTTP, se implementó Axios utilizando `axios.create`, lo que permitió configurar una instancia personalizada con la URL base y otras opciones comunes. Esto facilita el mantenimiento y la escalabilidad del código al proporcionar una configuración centralizada para todas las solicitudes API.
 
-Además, para garantizar una experiencia de usuario más fluida, implementamos el uso del localStorage del navegador para almacenar y recuperar los datos del clima. Esto permite que los datos se mantengan persistidos incluso después de que el usuario actualice la página, evitando así la necesidad de realizar solicitudes repetidas a la API.
+Además, para garantizar una experiencia de usuario más fluida, implementé el uso del localStorage del navegador para almacenar y recuperar los datos del clima. Esto permite que los datos se mantengan persistidos incluso después de que el usuario actualice la página, evitando así la necesidad de realizar solicitudes repetidas a la API.
 
 ## Cómo correr el proyecto
 
