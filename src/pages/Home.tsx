@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CurrentWeather from "../components/currentWeather/CurrentWeather";
-import SearchBar from "../components/search/Search";
+import SearchBar from "../components/searchBar/SearchBar";
 import { useWeatherData } from "../hooks/useWeatherData";
 import ForecastInfo from "../components/forecast/ForecastInfo";
 import './styles.scss';

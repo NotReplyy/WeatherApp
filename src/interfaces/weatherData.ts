@@ -1,8 +1,8 @@
 export interface WeatherData {
   city:    City;
-  cod:     string;
-  message: number;
-  cnt:     number;
+  cod?:     string;
+  message?: number;
+  cnt?:     number;
   list:    List[];
 }
 

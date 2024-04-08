@@ -6,7 +6,7 @@ const ForecastInfo = ({ weatherInfo }: { weatherInfo: WeatherData }) => {
 
   const forecast = weatherInfo?.list.slice(1, 7);
 
-  const next3Days = getNextDays();
+  const next6Days = getNextDays();
 
   return (
     <div className="container-forecast">
@@ -14,15 +14,11 @@ const ForecastInfo = ({ weatherInfo }: { weatherInfo: WeatherData }) => {
       <div className="container-card-forecast">
         {forecast?.map((day, index) => (
           <div key={index} className="card-forecast">
-            <h3>{next3Days[index]}</h3>
+            <h3>{next6Days[index]}</h3>
             <img src={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`} alt="weather icon" />
             <p>{day.weather[0].main}</p>
             <span>
-              {Math.round(day.temp.max)}
-              <sup>&deg;</sup>
-              <small>/</small>
-              {Math.round(day.temp.min)}
-              <sup>&deg;</sup>
+              {Math.round(day.temp.max)}°/{Math.round(day.temp.min)}°
             </span>
           </div>
         ))}
